@@ -1,0 +1,15 @@
+[build]
+  publish = "src"
+  command = "echo 'Nothing to build...'"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age: 900, s-maxage=604800, must-revalidate"
+
+[[redirects]]
+  from = "/*/logo.png"
+  to = "/.placeholder/logo.png"
+  force = false
+  status = 302
+  headers = {Cache-Control = "public, max-age: 900, s-maxage=3600, must-revalidate"}
