@@ -1,6 +1,6 @@
 [build]
   publish = "build"
-  command = "./scripts/build.sh"
+  command = "bash ./scripts/build.sh"
 
 [[headers]]
   for = "/*.png"
