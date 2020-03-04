@@ -9,7 +9,7 @@
 
 [[redirects]]
   from = "/*/logo.png"
-  to = "/.placeholder/logo.png"
+  to = "/_placeholder/logo.png"
   force = false
   status = 302
   headers = {Cache-Control = "public, max-age: 900, s-maxage=3600, must-revalidate"}
