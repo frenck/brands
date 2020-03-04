@@ -13,3 +13,10 @@
   force = false
   status = 302
   headers = {Cache-Control = "public, max-age: 900, s-maxage=3600, must-revalidate"}
+
+[[redirects]]
+  from = "/*/icon.png"
+  to = "/_placeholder/icon.png"
+  force = false
+  status = 302
+  headers = {Cache-Control = "public, max-age: 900, s-maxage=3600, must-revalidate"}
