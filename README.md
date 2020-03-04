@@ -16,17 +16,23 @@ an integration for. A domain can contain two files:
 
 - `icon.png`: A square avatar-like icon, representing the brand or product for that domain.
 - `logo.png`: The logo of the brand or product for that domain.
+- `icon@2x.png`: hDPI version of `icon.png`
+- `logo@2x.png`: hDPI version of `logo.png`
 
 Those images are served in the following format:
 
 - `https://brand.home-assistant.io/[domain]/icon.png`
 - `https://brand.home-assistant.io/[domain]/logo.png`
+- `https://brand.home-assistant.io/[domain]/icon@2x.png`
+- `https://brand.home-assistant.io/[domain]/logo@2x.png`
 
 ### Missing image handling
 
 - If a domain is missing, the images from the `_placeholder` domain is served instead.
 - If a domain has only an `icon.png` file, that same icon will be served when `logo.png` is requested.
 - If a domain is missing the `icon.png` file, the placeholder icon will be served instead.
+- If a domain is missing the `icon@2.png` the `icon.png` is used instead.
+- If a domain is missing the `logo@2.png` the `logo.png` is used instead.
 
 ### Caching
 
@@ -55,7 +61,7 @@ Additional to the general image requirements listed above, for the icon image,
 the following requirements are applied as well:
 
 - Aspect ratio needs to be 1:1 (square).
-- Icon size must be 256x256 pixels.
+- Icon size must be 256x256 pixels, for the hDPI this is 512x512 pixels.
 - The maximum icon pixel size is, of course, preferred.
 
 ### Logo image requirements
@@ -65,8 +71,8 @@ the following requirements are applied as well:
 
 - A landscape image is preferred.
 - Aspect ratio should respect the logo of the brand.
-- Shortest side of te image must be at least 128 pixels.
-- Longest side of the image must not exceed 512 pixels.
+- Shortest side of te image must be at least 128 pixels, 256 pixels for the hDPI version.
+- Longest side of the image must not exceed 512 pixels, 1024 pixels for the hDPI version.
 - The maximum pixel size for the longest side of the images is, of course, preferred.
 
 ## Using the same logo & icon for different brands
