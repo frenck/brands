@@ -44,8 +44,10 @@ All images must have the following requirements:
 
 - The filetype of all images must be PNG.
 - They should be properly compressed and optimized (lossless is preferred) for use on the web.
-- Interlaced is preferred.
+- Interlaced is preferred (also known as progressive).
 - Images with transparency is preferred.
+- If multiple images are available, the ones optimized for a white background are preferred.
+- The image should be cropped, so it contains the minimum amount of empty space on the edges.
 
 ### Icon image requirements
 
@@ -53,8 +55,7 @@ Additional to the general image requirements listed above, for the icon image,
 the following requirements are applied as well:
 
 - Aspect ratio needs to be 1:1 (square).
-- Minimal icon size is 128x128 pixels.
-- Maximum icon size is 256x256 pixels.
+- Icon size must be 256x256 pixels.
 - The maximum icon pixel size is, of course, preferred.
 
 ### Logo image requirements
