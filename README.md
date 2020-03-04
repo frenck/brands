@@ -71,10 +71,9 @@ the following requirements are applied as well:
 ## Using the same logo & icon for different brands
 
 In order to keep the size of this repository as efficient as possible,
-symlinking domain folders for the same icon/logos is allowed.
-
-The deployment process to our hosting provider will unpack these symlinks
-to actual files during the deployment process.
+symlinking domain folders for the same icon/logos is allowed. The deployment
+process at our hosting provider will unpack these symlinks to actual files
+during the deployment process.
 
 ## Trademark Legal Notices
 
