@@ -1,6 +1,6 @@
 [build]
   publish = "build"
-  command = "rsync -aL --exclude '_homeassistant' src/ build"
+  command = "./scripts/build.sh"
 
 [[headers]]
   for = "/*.png"
