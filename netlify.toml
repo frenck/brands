@@ -3,6 +3,11 @@
   command = "bash ./scripts/build.sh"
 
 [[headers]]
+  for = "/_placeholder/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age: 900, s-maxage=3600, must-revalidate"
+
+[[headers]]
   for = "/*.png"
   [headers.values]
     Cache-Control = "public, max-age: 900, s-maxage=604800, must-revalidate"
