@@ -10,9 +10,10 @@ function error() {
   local message=${2}
   ((ERRORS++))
 
-  echo "${message}: ${file}"
   if [[ ! -z "${GITHUB_ACTIONS}" ]]; then
-    echo "::error file=${file}::${message}"
+    echo "::error file=${file}::${message}: ${file}"
+  else
+    echo "${message}: ${file}"
   fi
 }
 
@@ -87,7 +88,7 @@ while read image; do
     fi
 
     ((IMAGES++))
-done <<< $(find ./src -type f)
+done <<< $(find src -type f)
 
 echo ""
 echo "Total of ${IMAGES} images checked, found ${ERRORS} issues."
