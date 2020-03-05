@@ -12,7 +12,7 @@ repository of brand images.
 ## Inner workings
 
 The `./src` folder contains a folder for each `domain` Home Assistant provides
-an integration for. A domain can contain two files:
+an integration for. A domain can contain four files:
 
 - `icon.png`: A square avatar-like icon, representing the brand or product for that domain.
 - `logo.png`: The logo of the brand or product for that domain.
