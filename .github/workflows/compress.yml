@@ -1,4 +1,4 @@
-name: Compress Images
+name: Compress
 
 on:
   pull_request:
@@ -6,11 +6,11 @@ on:
       - "src/**.png"
 
 jobs:
-  build:
-    name: calibreapp/image-actions
+  compress:
+    name: Compress images
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
+      - name: Checkout repository
         uses: actions/checkout@v2
       - name: Compress Images
         uses: calibreapp/image-actions@master
