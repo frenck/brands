@@ -49,6 +49,7 @@ our cache.
 All images must have the following requirements:
 
 - The filetype of all images must be PNG.
+- The color space of all images must be rRGB.
 - They should be properly compressed and optimized (lossless is preferred) for use on the web.
 - Interlaced is preferred (also known as progressive).
 - Images with transparency is preferred.
@@ -71,8 +72,8 @@ the following requirements are applied as well:
 
 - A landscape image is preferred.
 - Aspect ratio should respect the logo of the brand.
-- Shortest side of te image must be at least 128 pixels, 256 pixels for the hDPI version.
-- Longest side of the image must not exceed 512 pixels, 1024 pixels for the hDPI version.
+- Shortest side of the image must be at least 128 pixels, 256 pixels for the hDPI version.
+- Shortest side of the image must be not bigger than 256 pixels, 512 pixels for the hDPI version.
 - The maximum pixel size for the longest side of the images is, of course, preferred.
 
 ## Using the same logo & icon for different brands
